@@ -1,0 +1,5 @@
+{
+  "nuxt.isNuxtApp": false,
+  "editor.defaultFormatter": "Dart-Code.dart-code",
+  "editor.formatOnSave": true
+}
