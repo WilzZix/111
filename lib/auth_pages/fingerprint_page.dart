@@ -4,6 +4,7 @@ import 'package:local_auth/local_auth.dart';
 
 class FingerprintAuth extends StatefulWidget {
   static const String routeName = '/fingering';
+
   const FingerprintAuth({Key? key}) : super(key: key);
 
   @override
@@ -86,13 +87,12 @@ class _FingerprintAuthState extends State<FingerprintAuth> {
             Container(
               margin: EdgeInsets.symmetric(vertical: 15.0),
               width: double.infinity,
-              child: RaisedButton(
+              child: ElevatedButton(
                 onPressed: _authenticate,
-                elevation: 0.0,
-                color: Color(0xFF04A5ED),
-                shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(30.0),
-                ),
+                // color: Color(0xFF04A5ED),
+                // shape: RoundedRectangleBorder(
+                //   borderRadius: BorderRadius.circular(30.0),
+                // ),
                 child: Padding(
                   padding: const EdgeInsets.symmetric(
                       horizontal: 24.0, vertical: 14.0),

@@ -10,6 +10,7 @@ import '../pages/home_pages.dart';
 
 class PasswordView extends StatefulWidget {
   static const String routeName = '/pinCode';
+
   @override
   _PasswordViewState createState() => _PasswordViewState();
 }
@@ -220,18 +221,24 @@ class _PasswordViewState extends State<PasswordView> {
                                         ),
                                       ),
                                       child: Container(
-                                        //
-                                        child: FlatButton(
-                                            height: double.maxFinite,
-                                            onPressed: () {
-                                              addDigit(1);
-                                              if (code.length == 4) {
-                                                savePinCodeToLocalStorage();
-                                                Navigator.of(context).pushNamed(
-                                                    HomePagesScreen.routeName);
-                                              }
-                                            },
-                                            child: Text('1', style: textStyle)),
+                                        child: TextButton(
+                                          style: TextButton.styleFrom(
+                                              minimumSize: Size.fromHeight(
+                                                  double.maxFinite)),
+                                          // height: double.maxFinite,
+                                          onPressed: () {
+                                            addDigit(1);
+                                            if (code.length == 4) {
+                                              savePinCodeToLocalStorage();
+                                              Navigator.of(context).pushNamed(
+                                                  HomePagesScreen.routeName);
+                                            }
+                                          },
+                                          child: Text(
+                                            '1',
+                                            style: textStyle,
+                                          ),
+                                        ),
                                       ),
                                     ),
                                     Container(
@@ -247,17 +254,24 @@ class _PasswordViewState extends State<PasswordView> {
                                         ),
                                       ),
                                       child: Container(
-                                        child: FlatButton(
-                                            height: double.maxFinite,
-                                            onPressed: () {
-                                              addDigit(2);
-                                              if (code.length == 4) {
-                                                savePinCodeToLocalStorage();
-                                                Navigator.of(context).pushNamed(
-                                                    HomePagesScreen.routeName);
-                                              }
-                                            },
-                                            child: Text('2', style: textStyle)),
+                                        child: TextButton(
+                                          style: TextButton.styleFrom(
+                                              minimumSize: Size.fromHeight(
+                                                  double.maxFinite)),
+                                          // height: double.maxFinite,
+                                          onPressed: () {
+                                            addDigit(2);
+                                            if (code.length == 4) {
+                                              savePinCodeToLocalStorage();
+                                              Navigator.of(context).pushNamed(
+                                                  HomePagesScreen.routeName);
+                                            }
+                                          },
+                                          child: Text(
+                                            '2',
+                                            style: textStyle,
+                                          ),
+                                        ),
                                       ),
                                     ),
                                     Container(
@@ -273,17 +287,24 @@ class _PasswordViewState extends State<PasswordView> {
                                         ),
                                       ),
                                       child: Container(
-                                        child: FlatButton(
-                                            height: double.maxFinite,
-                                            onPressed: () {
-                                              addDigit(3);
-                                              if (code.length == 4) {
-                                                savePinCodeToLocalStorage();
-                                                Navigator.of(context).pushNamed(
-                                                    HomePagesScreen.routeName);
-                                              }
-                                            },
-                                            child: Text('3', style: textStyle)),
+                                        child: TextButton(
+                                          style: TextButton.styleFrom(
+                                              minimumSize: Size.fromHeight(
+                                                  double.maxFinite)),
+                                          // height: double.maxFinite,
+                                          onPressed: () {
+                                            addDigit(3);
+                                            if (code.length == 4) {
+                                              savePinCodeToLocalStorage();
+                                              Navigator.of(context).pushNamed(
+                                                  HomePagesScreen.routeName);
+                                            }
+                                          },
+                                          child: Text(
+                                            '3',
+                                            style: textStyle,
+                                          ),
+                                        ),
                                       ),
                                     ),
                                   ],
@@ -311,17 +332,24 @@ class _PasswordViewState extends State<PasswordView> {
                                         ),
                                       ),
                                       child: Container(
-                                        child: FlatButton(
-                                            height: double.maxFinite,
-                                            onPressed: () {
-                                              addDigit(4);
-                                              if (code.length == 4) {
-                                                savePinCodeToLocalStorage();
-                                                Navigator.of(context).pushNamed(
-                                                    HomePagesScreen.routeName);
-                                              }
-                                            },
-                                            child: Text('4', style: textStyle)),
+                                        child: TextButton(
+                                          style: TextButton.styleFrom(
+                                              minimumSize: Size.fromHeight(
+                                                  double.maxFinite)),
+                                          // height: double.maxFinite,
+                                          onPressed: () {
+                                            addDigit(4);
+                                            if (code.length == 4) {
+                                              savePinCodeToLocalStorage();
+                                              Navigator.of(context).pushNamed(
+                                                  HomePagesScreen.routeName);
+                                            }
+                                          },
+                                          child: Text(
+                                            '4',
+                                            style: textStyle,
+                                          ),
+                                        ),
                                       ),
                                     ),
                                     Container(
@@ -337,17 +365,24 @@ class _PasswordViewState extends State<PasswordView> {
                                         ),
                                       ),
                                       child: Container(
-                                        child: FlatButton(
-                                            height: double.maxFinite,
-                                            onPressed: () {
-                                              addDigit(5);
-                                              if (code.length == 4) {
-                                                savePinCodeToLocalStorage();
-                                                Navigator.of(context).pushNamed(
-                                                    HomePagesScreen.routeName);
-                                              }
-                                            },
-                                            child: Text('5', style: textStyle)),
+                                        child: TextButton(
+                                          style: TextButton.styleFrom(
+                                              minimumSize: Size.fromHeight(
+                                                  double.maxFinite)),
+                                          // height: double.maxFinite,
+                                          onPressed: () {
+                                            addDigit(5);
+                                            if (code.length == 4) {
+                                              savePinCodeToLocalStorage();
+                                              Navigator.of(context).pushNamed(
+                                                  HomePagesScreen.routeName);
+                                            }
+                                          },
+                                          child: Text(
+                                            '5',
+                                            style: textStyle,
+                                          ),
+                                        ),
                                       ),
                                     ),
                                     Container(
@@ -363,17 +398,24 @@ class _PasswordViewState extends State<PasswordView> {
                                         ),
                                       ),
                                       child: Container(
-                                        child: FlatButton(
-                                            height: double.maxFinite,
-                                            onPressed: () {
-                                              addDigit(6);
-                                              if (code.length == 4) {
-                                                savePinCodeToLocalStorage();
-                                                Navigator.of(context).pushNamed(
-                                                    HomePagesScreen.routeName);
-                                              }
-                                            },
-                                            child: Text('6', style: textStyle)),
+                                        child: TextButton(
+                                          style: TextButton.styleFrom(
+                                              minimumSize: Size.fromHeight(
+                                                  double.maxFinite)),
+                                          // height: double.maxFinite,
+                                          onPressed: () {
+                                            addDigit(6);
+                                            if (code.length == 4) {
+                                              savePinCodeToLocalStorage();
+                                              Navigator.of(context).pushNamed(
+                                                  HomePagesScreen.routeName);
+                                            }
+                                          },
+                                          child: Text(
+                                            '6',
+                                            style: textStyle,
+                                          ),
+                                        ),
                                       ),
                                     ),
                                   ],
@@ -401,17 +443,24 @@ class _PasswordViewState extends State<PasswordView> {
                                         ),
                                       ),
                                       child: Container(
-                                        child: FlatButton(
-                                            height: double.maxFinite,
-                                            onPressed: () {
-                                              addDigit(7);
-                                              if (code.length == 4) {
-                                                savePinCodeToLocalStorage();
-                                                Navigator.of(context).pushNamed(
-                                                    HomePagesScreen.routeName);
-                                              }
-                                            },
-                                            child: Text('7', style: textStyle)),
+                                        child: TextButton(
+                                          style: TextButton.styleFrom(
+                                              minimumSize: Size.fromHeight(
+                                                  double.maxFinite)),
+                                          // height: double.maxFinite,
+                                          onPressed: () {
+                                            addDigit(7);
+                                            if (code.length == 4) {
+                                              savePinCodeToLocalStorage();
+                                              Navigator.of(context).pushNamed(
+                                                  HomePagesScreen.routeName);
+                                            }
+                                          },
+                                          child: Text(
+                                            '7',
+                                            style: textStyle,
+                                          ),
+                                        ),
                                       ),
                                     ),
                                     Container(
@@ -427,17 +476,24 @@ class _PasswordViewState extends State<PasswordView> {
                                         ),
                                       ),
                                       child: Container(
-                                        child: FlatButton(
-                                            height: double.maxFinite,
-                                            onPressed: () {
-                                              addDigit(8);
-                                              if (code.length == 4) {
-                                                savePinCodeToLocalStorage();
-                                                Navigator.of(context).pushNamed(
-                                                    HomePagesScreen.routeName);
-                                              }
-                                            },
-                                            child: Text('8', style: textStyle)),
+                                        child: TextButton(
+                                          style: TextButton.styleFrom(
+                                              minimumSize: Size.fromHeight(
+                                                  double.maxFinite)),
+                                          // height: double.maxFinite,
+                                          onPressed: () {
+                                            addDigit(8);
+                                            if (code.length == 4) {
+                                              savePinCodeToLocalStorage();
+                                              Navigator.of(context).pushNamed(
+                                                  HomePagesScreen.routeName);
+                                            }
+                                          },
+                                          child: Text(
+                                            '8',
+                                            style: textStyle,
+                                          ),
+                                        ),
                                       ),
                                     ),
                                     Container(
@@ -453,17 +509,24 @@ class _PasswordViewState extends State<PasswordView> {
                                         ),
                                       ),
                                       child: Container(
-                                        child: FlatButton(
-                                            height: double.maxFinite,
-                                            onPressed: () {
-                                              addDigit(9);
-                                              if (code.length == 4) {
-                                                savePinCodeToLocalStorage();
-                                                Navigator.of(context).pushNamed(
-                                                    HomePagesScreen.routeName);
-                                              }
-                                            },
-                                            child: Text('9', style: textStyle)),
+                                        child: TextButton(
+                                          style: TextButton.styleFrom(
+                                              minimumSize: Size.fromHeight(
+                                                  double.maxFinite)),
+                                          // height: double.maxFinite,
+                                          onPressed: () {
+                                            addDigit(9);
+                                            if (code.length == 4) {
+                                              savePinCodeToLocalStorage();
+                                              Navigator.of(context).pushNamed(
+                                                  HomePagesScreen.routeName);
+                                            }
+                                          },
+                                          child: Text(
+                                            '9',
+                                            style: textStyle,
+                                          ),
+                                        ),
                                       ),
                                     ),
                                   ],
@@ -492,8 +555,13 @@ class _PasswordViewState extends State<PasswordView> {
                                         ),
                                       ),
                                       child: Container(
-                                        child: FlatButton(
-                                          height: double.maxFinite,
+                                        child: TextButton(
+                                          style: TextButton.styleFrom(
+                                            minimumSize: Size.fromHeight(
+                                              double.maxFinite,
+                                            ),
+                                          ),
+                                          //height: double.maxFinite,
                                           onPressed: () {},
                                           child: const Text(''),
                                         ),
@@ -512,17 +580,24 @@ class _PasswordViewState extends State<PasswordView> {
                                         ),
                                       ),
                                       child: Container(
-                                        child: FlatButton(
-                                            height: double.maxFinite,
-                                            onPressed: () {
-                                              addDigit(0);
-                                              if (code.length == 4) {
-                                                savePinCodeToLocalStorage();
-                                                Navigator.of(context).pushNamed(
-                                                    HomePagesScreen.routeName);
-                                              }
-                                            },
-                                            child: Text('0', style: textStyle)),
+                                        child: TextButton(
+                                          style: TextButton.styleFrom(
+                                              minimumSize: Size.fromHeight(
+                                                  double.maxFinite)),
+                                          // height: double.maxFinite,
+                                          onPressed: () {
+                                            addDigit(0);
+                                            if (code.length == 4) {
+                                              savePinCodeToLocalStorage();
+                                              Navigator.of(context).pushNamed(
+                                                  HomePagesScreen.routeName);
+                                            }
+                                          },
+                                          child: Text(
+                                            '0',
+                                            style: textStyle,
+                                          ),
+                                        ),
                                       ),
                                     ),
                                     Container(
@@ -538,8 +613,11 @@ class _PasswordViewState extends State<PasswordView> {
                                         ),
                                       ),
                                       child: Container(
-                                        child: FlatButton(
-                                            height: double.maxFinite,
+                                        child: TextButton(
+                                          style: TextButton.styleFrom(
+                                            minimumSize: Size.fromHeight(double.maxFinite)
+                                          ),
+                                            //height: double.maxFinite,
                                             onPressed: () {
                                               backspace();
                                             },
@@ -592,6 +670,7 @@ class DigitHolder extends StatelessWidget {
   final int selectedIndex;
   final int index;
   final String code;
+
   const DigitHolder({
     required this.selectedIndex,
     required Key key,

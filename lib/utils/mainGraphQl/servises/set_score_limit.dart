@@ -2,8 +2,11 @@ import 'package:MyID/utils/constants.dart';
 import 'package:graphql_flutter/graphql_flutter.dart';
 import '../graphql_strings.dart' as gql_string;
 
-Future setScoreLimit(
-    {String? claimsId, String? pId, String? tokenFromLocaleStorage}) async {
+Future setScoreLimit({
+  String? claimsId,
+  String? pId,
+  String? tokenFromLocaleStorage,
+}) async {
   Map<String, String> requestHeaders = {
     'Content-type': 'application/json',
     'Accept': 'application/json',

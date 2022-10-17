@@ -16,6 +16,7 @@ import 'package:jwt_decoder/jwt_decoder.dart';
 
 class SecondPinCodeAuth extends StatefulWidget {
   static const String routeName = '/secondPinCodeAuth';
+
   @override
   _SecondPinCodeAuthState createState() => _SecondPinCodeAuthState();
 }
@@ -108,6 +109,7 @@ class _SecondPinCodeAuthState extends State<SecondPinCodeAuth> {
   }
 
   var client = 'lendo-tablet';
+
   void reAuth() async {
     try {
       var url = Uri.parse(
@@ -290,26 +292,32 @@ class _SecondPinCodeAuthState extends State<SecondPinCodeAuth> {
                                           }
                                         },
                                         child: Container(
-                                          child: FlatButton(
-                                              height: double.maxFinite,
-                                              onPressed: () {
-                                                addDigit(1);
-                                                loadPinCodeToLocalStorage();
+                                          child: TextButton(
+                                            style: TextButton.styleFrom(
+                                              minimumSize: Size.fromHeight(
+                                                double.maxFinite,
+                                              ),
+                                            ),
+                                            // height: double.maxFinite,
+                                            onPressed: () {
+                                              addDigit(1);
+                                              loadPinCodeToLocalStorage();
 
-                                                if (code.length == 4) {
-                                                  if (loadPinCode
-                                                          .indexOf(code) !=
-                                                      -1) {
-                                                    reAuth();
-                                                    Navigator.of(context)
-                                                        .pushNamed(
-                                                            HomePagesScreen
-                                                                .routeName);
-                                                  }
+                                              if (code.length == 4) {
+                                                if (loadPinCode.indexOf(code) !=
+                                                    -1) {
+                                                  reAuth();
+                                                  Navigator.of(context)
+                                                      .pushNamed(HomePagesScreen
+                                                          .routeName);
                                                 }
-                                              },
-                                              child:
-                                                  Text('1', style: textStyle)),
+                                              }
+                                            },
+                                            child: Text(
+                                              '1',
+                                              style: textStyle,
+                                            ),
+                                          ),
                                         ),
                                       ),
                                     ),
@@ -337,24 +345,32 @@ class _SecondPinCodeAuthState extends State<SecondPinCodeAuth> {
                                           ),
                                         ),
                                         child: Container(
-                                          child: FlatButton(
-                                              height: double.maxFinite,
-                                              onPressed: () {
-                                                addDigit(2);
-                                                if (code.length == 4) {
-                                                  if (loadPinCode
-                                                          .indexOf(code) !=
-                                                      -1) {
-                                                    reAuth();
-                                                    Navigator.of(context)
-                                                        .pushNamed(
-                                                            HomePagesScreen
-                                                                .routeName);
-                                                  }
+                                          child: TextButton(
+                                            style: TextButton.styleFrom(
+                                              minimumSize: Size.fromHeight(
+                                                double.maxFinite,
+                                              ),
+                                            ),
+                                            // height: double.maxFinite,
+                                            onPressed: () {
+                                              addDigit(2);
+                                              loadPinCodeToLocalStorage();
+
+                                              if (code.length == 4) {
+                                                if (loadPinCode.indexOf(code) !=
+                                                    -1) {
+                                                  reAuth();
+                                                  Navigator.of(context)
+                                                      .pushNamed(HomePagesScreen
+                                                          .routeName);
                                                 }
-                                              },
-                                              child:
-                                                  Text('2', style: textStyle)),
+                                              }
+                                            },
+                                            child: Text(
+                                              '2',
+                                              style: textStyle,
+                                            ),
+                                          ),
                                         ),
                                       ),
                                     ),
@@ -382,24 +398,32 @@ class _SecondPinCodeAuthState extends State<SecondPinCodeAuth> {
                                           ),
                                         ),
                                         child: Container(
-                                          child: FlatButton(
-                                              height: double.maxFinite,
-                                              onPressed: () {
-                                                addDigit(3);
-                                                if (code.length == 4) {
-                                                  if (loadPinCode
-                                                          .indexOf(code) !=
-                                                      -1) {
-                                                    reAuth();
-                                                    Navigator.of(context)
-                                                        .pushNamed(
-                                                            HomePagesScreen
-                                                                .routeName);
-                                                  }
+                                          child: TextButton(
+                                            style: TextButton.styleFrom(
+                                              minimumSize: Size.fromHeight(
+                                                double.maxFinite,
+                                              ),
+                                            ),
+                                            // height: double.maxFinite,
+                                            onPressed: () {
+                                              addDigit(3);
+                                              loadPinCodeToLocalStorage();
+
+                                              if (code.length == 4) {
+                                                if (loadPinCode.indexOf(code) !=
+                                                    -1) {
+                                                  reAuth();
+                                                  Navigator.of(context)
+                                                      .pushNamed(HomePagesScreen
+                                                          .routeName);
                                                 }
-                                              },
-                                              child:
-                                                  Text('3', style: textStyle)),
+                                              }
+                                            },
+                                            child: Text(
+                                              '3',
+                                              style: textStyle,
+                                            ),
+                                          ),
                                         ),
                                       ),
                                     ),
@@ -439,24 +463,32 @@ class _SecondPinCodeAuthState extends State<SecondPinCodeAuth> {
                                           ),
                                         ),
                                         child: Container(
-                                          child: FlatButton(
-                                              height: double.maxFinite,
-                                              onPressed: () {
-                                                addDigit(4);
-                                                if (code.length == 4) {
-                                                  if (loadPinCode
-                                                          .indexOf(code) !=
-                                                      -1) {
-                                                    reAuth();
-                                                    Navigator.of(context)
-                                                        .pushNamed(
-                                                            HomePagesScreen
-                                                                .routeName);
-                                                  }
+                                          child: TextButton(
+                                            style: TextButton.styleFrom(
+                                              minimumSize: Size.fromHeight(
+                                                double.maxFinite,
+                                              ),
+                                            ),
+                                            // height: double.maxFinite,
+                                            onPressed: () {
+                                              addDigit(4);
+                                              loadPinCodeToLocalStorage();
+
+                                              if (code.length == 4) {
+                                                if (loadPinCode.indexOf(code) !=
+                                                    -1) {
+                                                  reAuth();
+                                                  Navigator.of(context)
+                                                      .pushNamed(HomePagesScreen
+                                                          .routeName);
                                                 }
-                                              },
-                                              child:
-                                                  Text('4', style: textStyle)),
+                                              }
+                                            },
+                                            child: Text(
+                                              '4',
+                                              style: textStyle,
+                                            ),
+                                          ),
                                         ),
                                       ),
                                     ),
@@ -484,24 +516,32 @@ class _SecondPinCodeAuthState extends State<SecondPinCodeAuth> {
                                           ),
                                         ),
                                         child: Container(
-                                          child: FlatButton(
-                                              height: double.maxFinite,
-                                              onPressed: () {
-                                                addDigit(5);
-                                                if (code.length == 4) {
-                                                  if (loadPinCode
-                                                          .indexOf(code) !=
-                                                      -1) {
-                                                    reAuth();
-                                                    Navigator.of(context)
-                                                        .pushNamed(
-                                                            HomePagesScreen
-                                                                .routeName);
-                                                  }
+                                          child: TextButton(
+                                            style: TextButton.styleFrom(
+                                              minimumSize: Size.fromHeight(
+                                                double.maxFinite,
+                                              ),
+                                            ),
+                                            // height: double.maxFinite,
+                                            onPressed: () {
+                                              addDigit(5);
+                                              loadPinCodeToLocalStorage();
+
+                                              if (code.length == 4) {
+                                                if (loadPinCode.indexOf(code) !=
+                                                    -1) {
+                                                  reAuth();
+                                                  Navigator.of(context)
+                                                      .pushNamed(HomePagesScreen
+                                                          .routeName);
                                                 }
-                                              },
-                                              child:
-                                                  Text('5', style: textStyle)),
+                                              }
+                                            },
+                                            child: Text(
+                                              '5',
+                                              style: textStyle,
+                                            ),
+                                          ),
                                         ),
                                       ),
                                     ),
@@ -529,24 +569,32 @@ class _SecondPinCodeAuthState extends State<SecondPinCodeAuth> {
                                           ),
                                         ),
                                         child: Container(
-                                          child: FlatButton(
-                                              height: double.maxFinite,
-                                              onPressed: () {
-                                                addDigit(6);
-                                                if (code.length == 4) {
-                                                  if (loadPinCode
-                                                          .indexOf(code) !=
-                                                      -1) {
-                                                    reAuth();
-                                                    Navigator.of(context)
-                                                        .pushNamed(
-                                                            HomePagesScreen
-                                                                .routeName);
-                                                  }
+                                          child: TextButton(
+                                            style: TextButton.styleFrom(
+                                              minimumSize: Size.fromHeight(
+                                                double.maxFinite,
+                                              ),
+                                            ),
+                                            // height: double.maxFinite,
+                                            onPressed: () {
+                                              addDigit(6);
+                                              loadPinCodeToLocalStorage();
+
+                                              if (code.length == 4) {
+                                                if (loadPinCode.indexOf(code) !=
+                                                    -1) {
+                                                  reAuth();
+                                                  Navigator.of(context)
+                                                      .pushNamed(HomePagesScreen
+                                                          .routeName);
                                                 }
-                                              },
-                                              child:
-                                                  Text('6', style: textStyle)),
+                                              }
+                                            },
+                                            child: Text(
+                                              '6',
+                                              style: textStyle,
+                                            ),
+                                          ),
                                         ),
                                       ),
                                     ),
@@ -586,24 +634,32 @@ class _SecondPinCodeAuthState extends State<SecondPinCodeAuth> {
                                           ),
                                         ),
                                         child: Container(
-                                          child: FlatButton(
-                                              height: double.maxFinite,
-                                              onPressed: () {
-                                                addDigit(7);
-                                                if (code.length == 4) {
-                                                  if (loadPinCode
-                                                          .indexOf(code) !=
-                                                      -1) {
-                                                    reAuth();
-                                                    Navigator.of(context)
-                                                        .pushNamed(
-                                                            HomePagesScreen
-                                                                .routeName);
-                                                  }
+                                          child: TextButton(
+                                            style: TextButton.styleFrom(
+                                              minimumSize: Size.fromHeight(
+                                                double.maxFinite,
+                                              ),
+                                            ),
+                                            // height: double.maxFinite,
+                                            onPressed: () {
+                                              addDigit(7);
+                                              loadPinCodeToLocalStorage();
+
+                                              if (code.length == 4) {
+                                                if (loadPinCode.indexOf(code) !=
+                                                    -1) {
+                                                  reAuth();
+                                                  Navigator.of(context)
+                                                      .pushNamed(HomePagesScreen
+                                                          .routeName);
                                                 }
-                                              },
-                                              child:
-                                                  Text('7', style: textStyle)),
+                                              }
+                                            },
+                                            child: Text(
+                                              '7',
+                                              style: textStyle,
+                                            ),
+                                          ),
                                         ),
                                       ),
                                     ),
@@ -631,24 +687,32 @@ class _SecondPinCodeAuthState extends State<SecondPinCodeAuth> {
                                           ),
                                         ),
                                         child: Container(
-                                          child: FlatButton(
-                                              height: double.maxFinite,
-                                              onPressed: () {
-                                                addDigit(8);
-                                                if (code.length == 4) {
-                                                  if (loadPinCode
-                                                          .indexOf(code) !=
-                                                      -1) {
-                                                    reAuth();
-                                                    Navigator.of(context)
-                                                        .pushNamed(
-                                                            HomePagesScreen
-                                                                .routeName);
-                                                  }
+                                          child: TextButton(
+                                            style: TextButton.styleFrom(
+                                              minimumSize: Size.fromHeight(
+                                                double.maxFinite,
+                                              ),
+                                            ),
+                                            // height: double.maxFinite,
+                                            onPressed: () {
+                                              addDigit(8);
+                                              loadPinCodeToLocalStorage();
+
+                                              if (code.length == 4) {
+                                                if (loadPinCode.indexOf(code) !=
+                                                    -1) {
+                                                  reAuth();
+                                                  Navigator.of(context)
+                                                      .pushNamed(HomePagesScreen
+                                                          .routeName);
                                                 }
-                                              },
-                                              child:
-                                                  Text('8', style: textStyle)),
+                                              }
+                                            },
+                                            child: Text(
+                                              '8',
+                                              style: textStyle,
+                                            ),
+                                          ),
                                         ),
                                       ),
                                     ),
@@ -676,24 +740,32 @@ class _SecondPinCodeAuthState extends State<SecondPinCodeAuth> {
                                           ),
                                         ),
                                         child: Container(
-                                          child: FlatButton(
-                                              height: double.maxFinite,
-                                              onPressed: () {
-                                                addDigit(9);
-                                                if (code.length == 4) {
-                                                  if (loadPinCode
-                                                          .indexOf(code) !=
-                                                      -1) {
-                                                    reAuth();
-                                                    Navigator.of(context)
-                                                        .pushNamed(
-                                                            HomePagesScreen
-                                                                .routeName);
-                                                  }
+                                          child: TextButton(
+                                            style: TextButton.styleFrom(
+                                              minimumSize: Size.fromHeight(
+                                                double.maxFinite,
+                                              ),
+                                            ),
+                                            // height: double.maxFinite,
+                                            onPressed: () {
+                                              addDigit(9);
+                                              loadPinCodeToLocalStorage();
+
+                                              if (code.length == 4) {
+                                                if (loadPinCode.indexOf(code) !=
+                                                    -1) {
+                                                  reAuth();
+                                                  Navigator.of(context)
+                                                      .pushNamed(HomePagesScreen
+                                                          .routeName);
                                                 }
-                                              },
-                                              child:
-                                                  Text('9', style: textStyle)),
+                                              }
+                                            },
+                                            child: Text(
+                                              '9',
+                                              style: textStyle,
+                                            ),
+                                          ),
                                         ),
                                       ),
                                     ),
@@ -723,8 +795,11 @@ class _SecondPinCodeAuthState extends State<SecondPinCodeAuth> {
                                         ),
                                       ),
                                       child: Container(
-                                        child: FlatButton(
-                                          height: double.maxFinite,
+                                        child: TextButton(
+                                          style: TextButton.styleFrom(
+                                              minimumSize: Size.fromHeight(
+                                                  double.maxFinite)),
+                                          // height: double.maxFinite,
                                           onPressed: () {},
                                           child: const Text(''),
                                         ),
@@ -754,24 +829,32 @@ class _SecondPinCodeAuthState extends State<SecondPinCodeAuth> {
                                           ),
                                         ),
                                         child: Container(
-                                          child: FlatButton(
-                                              height: double.maxFinite,
-                                              onPressed: () {
-                                                addDigit(0);
-                                                if (code.length == 4) {
-                                                  if (loadPinCode
-                                                          .indexOf(code) !=
-                                                      -1) {
-                                                    reAuth();
-                                                    Navigator.of(context)
-                                                        .pushNamed(
-                                                            HomePagesScreen
-                                                                .routeName);
-                                                  }
+                                          child: TextButton(
+                                            style: TextButton.styleFrom(
+                                              minimumSize: Size.fromHeight(
+                                                double.maxFinite,
+                                              ),
+                                            ),
+                                            // height: double.maxFinite,
+                                            onPressed: () {
+                                              addDigit(0);
+                                              loadPinCodeToLocalStorage();
+
+                                              if (code.length == 4) {
+                                                if (loadPinCode.indexOf(code) !=
+                                                    -1) {
+                                                  reAuth();
+                                                  Navigator.of(context)
+                                                      .pushNamed(HomePagesScreen
+                                                          .routeName);
                                                 }
-                                              },
-                                              child:
-                                                  Text('0', style: textStyle)),
+                                              }
+                                            },
+                                            child: Text(
+                                              '0',
+                                              style: textStyle,
+                                            ),
+                                          ),
                                         ),
                                       ),
                                     ),
@@ -788,8 +871,13 @@ class _SecondPinCodeAuthState extends State<SecondPinCodeAuth> {
                                         ),
                                       ),
                                       child: Container(
-                                        child: FlatButton(
-                                            height: double.maxFinite,
+                                        child: TextButton(
+                                            style: TextButton.styleFrom(
+                                              minimumSize: Size.fromHeight(
+                                                double.maxFinite,
+                                              ),
+                                            ),
+                                            // height: double.maxFinite,
                                             onPressed: () {
                                               backspace();
                                             },
@@ -842,6 +930,7 @@ class DigitHolder extends StatelessWidget {
   final int selectedIndex;
   final int index;
   final String code;
+
   const DigitHolder({
     required this.selectedIndex,
     required Key key,

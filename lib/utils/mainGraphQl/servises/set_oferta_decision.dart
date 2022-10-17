@@ -2,10 +2,11 @@ import 'package:graphql_flutter/graphql_flutter.dart';
 import '../../constants.dart';
 import '../graphql_strings.dart' as gql_string;
 
-Future setOfertaDecisions(
-    {String? decision,
-    String? claimsId,
-    String? tokenFromLocaleStorage}) async {
+Future setOfertaDecisions({
+  String? decision,
+  String? claimsId,
+  String? tokenFromLocaleStorage,
+}) async {
   Map<String, String> requestHeaders = {
     'Content-type': 'application/json',
     'Accept': 'application/json',

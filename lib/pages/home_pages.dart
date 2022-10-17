@@ -428,7 +428,7 @@ class _HomePagesScreenState extends State<HomePagesScreen> {
                         ),
                       ])
                 : ListView(
-                    shrinkWrap: true,
+                    shrinkWrap: false,
                     physics: const AlwaysScrollableScrollPhysics(),
                     controller: _controller,
                     children: [
